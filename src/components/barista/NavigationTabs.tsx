@@ -6,7 +6,7 @@ interface NavigationTabsProps {
 }
 
 const NavigationTabs = ({ activeTab, onTabChange }: NavigationTabsProps) => {
-  const tabs = ['Home', 'Services', 'Projects', 'Contact'];
+  const tabs = ['Profile', 'Flow Bar', 'Latte Arts', 'Contact'];
 
   return (
     <nav className="bg-[#faf9f3] w-full py-6">

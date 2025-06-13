@@ -12,7 +12,6 @@ const Barista = () => {
 
   return (
     <div className="min-h-screen bg-[#F8F7F1] dark:bg-amber-950">
-      <HeroSection />
       <NavigationTabs activeTab={activeTab} onTabChange={setActiveTab} />
       
       <main className="max-w-7xl mx-auto px-4 py-8">
