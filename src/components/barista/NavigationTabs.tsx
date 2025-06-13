@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface NavigationTabsProps {
   activeTab: string;
   onTabChange: (tab: string) => void;

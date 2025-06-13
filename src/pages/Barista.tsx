@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import HeroSection from '../components/barista/HeroSection';
 import NavigationTabs from '../components/barista/NavigationTabs';
 import JourneySection from '../components/barista/JourneySection';
 import BlogSection from '../components/barista/BlogSection';
