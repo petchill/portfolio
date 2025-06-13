@@ -1,0 +1,92 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@petchill 
+sveltejs
+/
+vite-plugin-svelte
+Public
+Code
+Issues
+8
+Pull requests
+5
+Actions
+Projects
+Security
+Insights
+vite-plugin-svelte/.gitignore
+@dominikg
+dominikg chore(deps): major updates tsup6, typescript 4.7, vitest 0.13, regene…
+…
+Latest commit 1b4113b on May 31
+ History
+ 1 contributor
+48 lines (42 sloc)  477 Bytes
+
+# logs and temp
+*.log
+**/*.log
+*.cpuprofile
+**/*.cpuprofile
+temp
+**/temp
+*.tmp
+**/*.tmp
+
+# build and dist
+build
+**/build
+dist
+**/dist
+.svelte
+.svelte-kit
+**/.svelte
+**/.svelte-kit
+
+# env and local
+*.local
+**/*.local
+.env
+**/.env
+
+#node_modules and pnpm
+node_modules
+**/node_modules
+# only workspace root has a lock
+**/pnpm-lock.yaml
+.pnpm-store
+**/.pnpm-store
+
+#ide
+.idea
+**/.idea
+.vscode
+**/.vscode
+
+# macos
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+# other
+coverage
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
