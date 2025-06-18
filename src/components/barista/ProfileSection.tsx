@@ -18,9 +18,8 @@ const ProfileSection = () => {
           />
         </div>
       </div>
-      <p className="text-center text-lg md:text-2xl">
+      <p className="text-center text-lg text-xl! px-[4px] mt-[24px] font-semi-bold text-[#2b7a78]">
         A passionate barista with a love for crafting the perfect cup of coffee.
-        Join me on my journey to explore the world of coffee, from bean to brew.
       </p>
 
       {/* <h2>My Coffee Journey</h2>

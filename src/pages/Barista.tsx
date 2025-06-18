@@ -3,6 +3,7 @@ import NavigationTabs from '../components/barista/NavigationTabs';
 import ProfileSection from '../components/barista/ProfileSection';
 import LatteArtSection from '../components/barista/LatteArtSection';
 import FlowBarSection from '../components/barista/FlowBarSection';
+import ContactSection from '../components/barista/ContactSection';
 
 const Barista = () => {
   const [activeTab, setActiveTab] = useState('journey');
@@ -21,7 +22,8 @@ const Barista = () => {
         <section id="flow-bar" className='px-4 py-[24px]'>
           <FlowBarSection />
         </section>
-        <section id="contact">
+        <section id="contract" className='px-4 py-[24px] bg-[#2b7a78]'>
+          <ContactSection />
         </section>
       </main>
     </div>
