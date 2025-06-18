@@ -3,7 +3,7 @@ const ContactSection = () => {
         <div className="flex flex-col text-[#F8F7F1] gap-[32px] pb-[32px]">
             <div className="h-[2px] border-b-[2px] border-white" />
 
-            <h2 className="text-4xl md:text-6xl font-bold text-center font-bubblegum ">Mistakes have the power to turn you into something better than you were before.</h2>
+            <h2 className="text-4xl font-bold text-center font-bubblegum ">Mistakes have the power to turn you into something better than you were before.</h2>
             <div className="h-[2px] border-b-[2px] border-white" />
             <div className="flex flex-col items-start">
                 <p className="text-2xl font-bold mb-[16px]">Contact me</p>

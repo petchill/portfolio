@@ -13,7 +13,7 @@ const Barista = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#F8F7F1] dark:bg-amber-950">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#F8F7F1]">
       <NavigationTabs jumpToSection={jumpToSection} />
 
       <main className="mx-auto">

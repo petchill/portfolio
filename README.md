@@ -7,7 +7,6 @@ A personal portfolio website showcasing my journey as both a Software Engineer a
 - Modern, responsive design
 - Interactive UI components
 - Smooth animations and transitions
-- Dark/Light mode support
 - Project showcase section
 - Blog/Articles section
 - Contact form

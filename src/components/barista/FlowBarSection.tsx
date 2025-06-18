@@ -1,7 +1,7 @@
 const FlowBarSection = () => {
     return (
         <section className="min-h-screen flex flex-col gap-8">
-            <h1 className="text-4xl md:text-6xl font-bold text-center text-[#2b7a78]">Flow Bar</h1>
+            <h1 className="text-4xl font-bold text-center text-[#2b7a78]">Flow Bar</h1>
             <div>
                 <h2 className="text-3xl font-bold text-left mb-[16px]">1 FOR 4 <span className="text-xl text-gray-700">(Ghost Stream)</span></h2>
                 <div className="relative w-full pt-[56.25%] rounded-xl overflow-hidden shadow-lg">

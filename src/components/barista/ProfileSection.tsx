@@ -2,8 +2,8 @@ const ProfileSection = () => {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center gap-8">
       <div>
-        <h2 className="text-4xl md:text-6xl font-bold text-center font-[BubblegumSans]">Hi I'am</h2>
-        <h1 className="text-4xl md:text-6xl font-bold text-center text-yellow-500">Petch</h1>
+        <h2 className="text-4xl font-bold text-center font-[BubblegumSans]">Hi I'am</h2>
+        <h1 className="text-4xl font-bold text-center text-yellow-500">Petch</h1>
       </div>
       <div className="relative flex items-end justify-end">
         <div
