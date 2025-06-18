@@ -10,11 +10,11 @@ const Barista = () => {
     <div className="min-h-screen w-screen flex flex-col items-center justify-center bg-[#F8F7F1] dark:bg-amber-950">
       <NavigationTabs activeTab={activeTab} onTabChange={setActiveTab} />
 
-      <main className="max-w-7xl mx-auto px-4">
-        <section id='journey'>
+      <main className="max-w-7xl mx-auto">
+        <section id='journey' className='px-4'>
           <ProfileSection />
         </section>
-        <section id="letter-art">
+        <section id="letter-art" className='px-4 py-[24px] bg-yellow-500'>
           <LatteArtSection />
         </section>
         <section id="flow-bar">

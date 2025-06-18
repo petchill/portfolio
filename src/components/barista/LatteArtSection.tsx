@@ -5,7 +5,7 @@ import LatteArtCard from './LatteArtCard';
 const LatteArtSection = () => {
     return (
         <section className="prose dark:prose-invert max-w-none min-h-screen flex flex-col gap-8">
-            <h1 className="text-4xl md:text-6xl font-bold text-center text-yellow-500">Latte Art</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-center text-[#F8F7F1]">Latte Art</h1>
             <div className='grid grid-cols-2 gap-[8px]'>
                 <img className="object-cover w-full aspect-square rounded-[8px]" src="/portfolio/barista/art_20250613_105100.jpg" alt="art_20250613_105100" />
                 <img className="object-cover w-full aspect-square rounded-[8px]" src="/portfolio/barista/art_20250606_105750.jpg" alt="art_20250606_105750" />
@@ -15,11 +15,10 @@ const LatteArtSection = () => {
                 <img className="object-cover w-full aspect-square rounded-[8px]" src="/portfolio/barista/art_20250610_125111.jpg" alt="art_20250610_125111" />
                 <img className="object-cover w-full aspect-square rounded-[8px]" src="/portfolio/barista/art_20250613_103501.jpg" alt="art_20250613_103501" />
                 <img className="object-cover w-full aspect-square rounded-[8px]" src="/portfolio/barista/art_20250613_105006.jpg" alt="art_20250613_105006" />
-
             </div>
             <div className="">
-                <h4 className='text-[24px] font-bold text-yellow-500'>Video</h4>
-                <p className='mb-[8px] text-gray-400 font-bold'>swipe left/right</p>
+                <h4 className='text-[24px] font-bold text-[#EDB33C]'>Video</h4>
+                <p className='mb-[8px] text-gray-200 font-bold'>swipe left/right</p>
                 <Carousel
                     interval={5000}
                     className="w-full max-w-[380px]"

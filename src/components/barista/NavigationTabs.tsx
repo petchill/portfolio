@@ -22,7 +22,7 @@ const NavigationTabs = ({ activeTab, onTabChange }: NavigationTabsProps) => {
   }, []);
 
   return (
-    <nav className="bg-[#F8F7F1] w-full max-w-[390px] py-6 fixed left-1/2 z-50 transform -translate-x-1/2 top-0">
+    <nav className="bg-[#F8F7F1] w-full py-6 fixed left-1/2 z-50 transform -translate-x-1/2 top-0">
       <div className="bg-transparent max-w-7xl mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center text-3xl font-semibold">

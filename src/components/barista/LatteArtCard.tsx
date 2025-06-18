@@ -5,7 +5,7 @@ interface PropTypes {
 }
 const LatteArtCard = (props: PropTypes) => {
     return (
-        <div className="w-full p-[16px] rounded-[16px] bg-white flex flex-col gap-[8px] items-center shadow-lg">
+        <div className="w-full p-[16px] rounded-[16px] bg-[#F8F7F1] flex flex-col gap-[8px] items-center shadow-lg">
             <img
                 src={props.image_url}
                 alt="Latte Art"
