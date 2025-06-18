@@ -12,6 +12,12 @@ const ContactSection = () => {
                 <p><span className="font-bold">Tel: </span><a className="text-[#F8F7F1]! underline!" href="tel:0412522720">0412522720</a></p>
                 <p><span className="font-bold">Email: </span><a className="text-[#F8F7F1]! underline!" href="tel:0412522720">petch.songpon@gmail.com</a></p>
                 <p><span className="font-bold">Location: </span>CBD Melbourne VIC 3000</p>
+                <button
+                    className="bg-white text-[#2b7a78] font-semibold text-lg px-6 py-3 rounded-md shadow-sm transition-colors duration-200 mt-[8px]"
+                    onClick={() => window.open('https://drive.google.com/file/d/1rkkBlMwFuCHhCOgbTEu_sjkwtP8MC1vq/view?usp=sharing', '_blank')}
+                >
+                    Download Resume
+                </button>
             </div>
         </div>
     );

@@ -1,14 +1,19 @@
 import { useState, useRef, useEffect } from 'react';
 
 interface NavigationTabsProps {
-  activeTab: string;
-  onTabChange: (tab: string) => void;
+  jumpToSection: (sectionId: string) => void;
 }
 
-const NavigationTabs = ({ activeTab, onTabChange }: NavigationTabsProps) => {
+const NavigationTabs = ({ jumpToSection }: NavigationTabsProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const tabs = ['Profile', 'Flow Bar', 'Latte Arts', 'Contact'];
+  const tabs = ['Profile', 'Latte Arts', 'Flow Bar', 'Contact'];
+  const tabDictID = {
+    Profile: 'journey',
+    'Latte Arts': 'latte-art',
+    'Flow Bar': 'flow-bar',
+    Contact: 'contact',
+  }
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -21,6 +26,15 @@ const NavigationTabs = ({ activeTab, onTabChange }: NavigationTabsProps) => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  const handleTabClick = (tab: string) => {
+    setIsMenuOpen(false);
+    if (jumpToSection) {
+      const sectionId = tabDictID[tab as keyof typeof tabDictID];
+      if (sectionId) {
+        jumpToSection(sectionId);
+      }
+    }
+  };
   return (
     <nav className="bg-[#F8F7F1] w-full py-6 fixed left-1/2 z-50 transform -translate-x-1/2 top-0">
       <div className="bg-transparent max-w-7xl mx-auto px-4 flex items-center justify-between">
@@ -95,30 +109,19 @@ const NavigationTabs = ({ activeTab, onTabChange }: NavigationTabsProps) => {
               {tabs.map((tab) => (
                 <button
                   key={tab}
-                  onClick={() => {
-                    onTabChange(tab);
-                    setIsMenuOpen(false);
-                  }}
-                  className={`text-lg font-medium transition-colors duration-200 focus:outline-none ${activeTab === tab
-                    ? 'text-[#2b7a78]'
-                    : 'text-[#15343b] hover:text-[#2b7a78]'
-                    }`}
+                  onClick={() => handleTabClick(tab)}
+                  className={`text-lg font-medium transition-colors duration-200 focus:outline-none text-[#15343b] hover:text-[#2b7a78]`}
                 >
-                  {activeTab === tab ? (
-                    <span>
-                      <span className="text-[#2b7a78]">(</span>
-                      <span className="mx-1 font-semibold">{tab}</span>
-                      <span className="text-[#2b7a78]">)</span>
-                    </span>
-                  ) : (
+                  {
                     tab
-                  )}
+                  }
                 </button>
               ))}
               <button
-                className="bg-[#2b7a78] text-white font-semibold text-lg px-6 py-3 rounded-md shadow-sm hover:bg-[#226c68] transition-colors duration-200 w-full"
+                className="bg-[#2b7a78]! text-white font-semibold text-lg px-6 py-3 rounded-md shadow-sm hover:bg-[#226c68] transition-colors duration-200 w-full"
+                onClick={() => window.open('https://drive.google.com/file/d/1rkkBlMwFuCHhCOgbTEu_sjkwtP8MC1vq/view?usp=sharing', '_blank')}
               >
-                Download CV
+                Download Resume
               </button>
             </div>
           </div>
