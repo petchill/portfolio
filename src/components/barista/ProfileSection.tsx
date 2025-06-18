@@ -1,6 +1,6 @@
 const ProfileSection = () => {
   return (
-    <section className=" h-screen flex flex-col justify-center items-center gap-8">
+    <section className="min-h-screen flex flex-col justify-center items-center gap-8">
       <div>
         <h2 className="text-4xl md:text-6xl font-bold text-center font-[BubblegumSans]">Hi I'am</h2>
         <h1 className="text-4xl md:text-6xl font-bold text-center text-yellow-500">Petch</h1>

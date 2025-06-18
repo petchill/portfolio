@@ -25,7 +25,7 @@ const LatteArtSection = () => {
                     showArrows={false}
                     renderItem={(item, props) => (
                         <div {...props} className="flex justify-center mx-[8px] mb-[36px]">
-                            <div className="mx-[8px]">{item}</div>
+                            <div className="]">{item}</div>
                         </div>
                     )}
 
