@@ -4,7 +4,7 @@ import LatteArtCard from './LatteArtCard';
 
 const LatteArtSection = () => {
     return (
-        <section className="prose dark:prose-invert max-w-none min-h-screen flex flex-col gap-8">
+        <section className="min-h-screen flex flex-col gap-8">
             <h1 className="text-4xl md:text-6xl font-bold text-center text-[#F8F7F1]">Latte Art</h1>
             <div className='grid grid-cols-2 gap-[8px]'>
                 <img className="object-cover w-full aspect-square rounded-[8px]" src="/portfolio/barista/art_20250613_105100.jpg" alt="art_20250613_105100" />
