@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import NavigationTabs from '../components/barista/NavigationTabs';
 import ProfileSection from '../components/barista/ProfileSection';
+import LatteArtSection from '../components/barista/LatteArtSection';
 
 const Barista = () => {
   const [activeTab, setActiveTab] = useState('journey');
@@ -14,6 +15,7 @@ const Barista = () => {
           <ProfileSection />
         </section>
         <section id="letter-art">
+          <LatteArtSection />
         </section>
         <section id="flow-bar">
         </section>
