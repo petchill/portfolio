@@ -16,17 +16,17 @@ const Barista = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#F8F7F1]">
       <NavigationTabs jumpToSection={jumpToSection} />
 
-      <main className="mx-auto">
-        <section id='journey' className='px-4'>
+      <main className="mx-auto mt-[64px]">
+        <section id='journey' className='px-4 md:px-[68px]'>
           <ProfileSection />
         </section>
-        <section id="latte-art" className='px-4 pt-[92px] py-[24px] bg-yellow-500'>
+        <section id="latte-art" className='px-4 md:px-[68px] pt-[92px] py-[24px] bg-yellow-500'>
           <LatteArtSection />
         </section>
-        <section id="flow-bar" className='px-4 pt-[92px] py-[24px]'>
+        <section id="flow-bar" className='px-4 md:px-[68px] pt-[92px] py-[24px]'>
           <FlowBarSection />
         </section>
-        <section id="contact" className='px-4 pt-[92px] py-[24px] bg-[#2b7a78]'>
+        <section id="contact" className='px-4 md:px-[68px] pt-[92px] py-[24px] bg-[#2b7a78]'>
           <ContactSection />
         </section>
       </main>

@@ -6,7 +6,7 @@
   "homepage": "https://petchill.github.io/portfolio",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build ",
     "lint": "eslint .",
     "preview": "vite preview --outDir build",
     "predeploy": "npm run build",

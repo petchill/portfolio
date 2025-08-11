@@ -36,7 +36,7 @@ const NavigationTabs = ({ jumpToSection }: NavigationTabsProps) => {
     }
   };
   return (
-    <nav className="bg-[#F8F7F1] w-full py-6 fixed left-1/2 z-50 transform -translate-x-1/2 top-0">
+    <nav className="bg-[#F8F7F1] w-full py-[8px] fixed left-1/2 z-50 transform -translate-x-1/2 top-0">
       <div className="bg-transparent max-w-7xl mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center text-3xl font-semibold">
@@ -46,7 +46,7 @@ const NavigationTabs = ({ jumpToSection }: NavigationTabsProps) => {
 
         {/* Mobile Menu Button */}
         <button
-          className="p-2"
+          className="p-2 md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -68,29 +68,18 @@ const NavigationTabs = ({ jumpToSection }: NavigationTabsProps) => {
         </button>
 
         {/* Navigation Tabs - Desktop */}
-        {/* <div className="hidden lg:flex space-x-12">
+        <div className="hidden lg:flex space-x-12">
         {tabs.map((tab) => (
         <button
           key={tab}
-          onClick={() => onTabChange(tab)}
-          className={`relative text-lg font-medium transition-colors duration-200 focus:outline-none ${activeTab === tab
-          ? 'text-[#2b7a78]'
-          : 'text-[#15343b] hover:text-[#2b7a78]'
-          }`}
+          onClick={() => handleTabClick(tab)}
+          className={`relative text-lg font-medium duration-200 text-[#15343b] hover:text-[#2b7a78]`}
           style={{ minWidth: '90px' }}
         >
-          {activeTab === tab ? (
-          <span>
-            <span className="text-[#2b7a78]">(</span>
-            <span className="mx-1 font-semibold">{tab}</span>
-            <span className="text-[#2b7a78]">)</span>
-          </span>
-          ) : (
-          tab
-          )}
+          {tab}
         </button>
         ))}
-      </div> */}
+      </div>
 
         {/* Download CV Button - Desktop */}
         {/* <button

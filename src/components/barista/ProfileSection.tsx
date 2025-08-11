@@ -1,11 +1,11 @@
 const ProfileSection = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center gap-8">
+    <section className="min-h-screen md:h-screen flex flex-col justify-center items-center gap-8">
       <div>
         <h2 className="text-4xl font-bold text-center font-[BubblegumSans]">Hi I'am</h2>
         <h1 className="text-4xl font-bold text-center text-yellow-500">Petch</h1>
       </div>
-      <div className="relative flex items-end justify-end">
+      <div className="relative md:w-[40%] flex items-end justify-end">
         <div
           className="absolute bottom-[-7px] rounded-b-full w-[65%] left-1/2 -translate-x-1/2 h-1/2 z-40 border-b-6 border-yellow-400"
         />
@@ -18,7 +18,7 @@ const ProfileSection = () => {
           />
         </div>
       </div>
-      <p className="text-center text-lg text-xl! px-[4px] mt-[24px] font-semi-bold text-[#2b7a78]">
+      <p className="text-center text-xl md:text-2xl px-[4px] mt-[24px] font-semi-bold text-[#2b7a78]">
         A passionate barista with a love for crafting the perfect cup of coffee.
       </p>
 
