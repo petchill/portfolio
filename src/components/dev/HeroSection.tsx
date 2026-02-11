@@ -1,8 +1,8 @@
 export default function HeroSection() {
   return (
-    <div className="text-center md:text-left flex flex-col justify-between h-full p-[16px] md:p-[40px] ">
+    <div className="text-center md:text-left flex flex-col justify-between h-full  px-[16px] pt-[40px] md:p-[40px] ">
       <section className="w-full flex md:flex-row flex-col justify-between items-center">
-        <div className=" text-6xl md:text-6xl 2xl:text-9xl leading-[0.9] tracking-tight font-libreCas">
+        <div className="text-6xl md:text-6xl 2xl:text-9xl leading-[0.9] tracking-tight font-libreCas">
           <p>SONGPON NINWONG</p>
           <p className="mt-[8px] text-3xl md:text-5xl 2xl:text-8xl ">SOFTWARE ENGINEER</p>
         </div>
