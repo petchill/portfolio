@@ -1,7 +1,6 @@
 /* Use Tailwind CSS for global styles. Remove or migrate styles here as needed. */
 #root {
   margin: 0 auto;
-  text-align: center;
 }
 
 .logo {

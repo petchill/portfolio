@@ -7,8 +7,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'LibreCaslonDisplay';
+  src: url('./assets/fonts/LibreCaslonDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 @theme {
   --font-bubblegum: "BubblegumSans", sans-serif; 
+  --font-libreCas: "LibreCaslonDisplay", sans-serif; 
 }
 
 
