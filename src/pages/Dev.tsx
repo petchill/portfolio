@@ -33,7 +33,7 @@ const Dev = () => {
         <section id="project">
           <ProjectSection />
         </section>
-        <nav className="hidden md:block mt-10 text-right text-[#dddddd] md:fixed md:bottom-8 md:right-9 2xl:right-[60px] md:mt-0 md:text-[24px]">
+        <nav className="hidden md:block mt-10 text-right text-[#dddddd] md:fixed md:bottom-8 md:right-9 2xl:right-[60px] md:mt-0 md:text-[24px] z-50">
           <ul>
             {links.map((item) => (
               <li key={item.label}>
