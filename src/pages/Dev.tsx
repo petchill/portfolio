@@ -1,6 +1,7 @@
 import EducationSection from '../components/dev/EducationSection';
 import HeroSection from '../components/dev/HeroSection';
 import ExperienceSection from '../components/dev/ExperienceSection';
+import ProjectSection from '../components/dev/ProjectSection';
 
 const links = [
   { label: 'About Me', href: '#about', prefix: '— ' },
@@ -28,6 +29,9 @@ const Dev = () => {
         </section>
         <section id="experience">
           <ExperienceSection />
+        </section>
+        <section id="project">
+          <ProjectSection />
         </section>
         <nav className="hidden md:block mt-10 text-right text-[#dddddd] md:fixed md:bottom-8 md:right-9 2xl:right-[60px] md:mt-0 md:text-[24px]">
           <ul>
