@@ -3,6 +3,7 @@ import HeroSection from '../components/dev/HeroSection';
 import ExperienceSection from '../components/dev/ExperienceSection';
 import ProjectSection from '../components/dev/ProjectSection';
 import BlogSection from '../components/dev/BlogSection';
+import FooterSection from '../components/dev/FooterSection';
 
 const links = [
   { label: 'About Me', href: '#about', prefix: '— ' },
@@ -10,6 +11,7 @@ const links = [
   { label: 'Experience', href: '#experience', prefix: '- ' },
   { label: 'Project', href: '#project', prefix: '- ' },
   { label: 'Blog', href: '#blog', prefix: '- ' },
+  { label: 'Contact', href: '#contact', prefix: '- ' },
 ];
 
 const Dev = () => {
@@ -37,6 +39,9 @@ const Dev = () => {
         </section>
         <section id="blog">
           <BlogSection />
+        </section>
+        <section id="contact">
+          <FooterSection />
         </section>
         <nav className="hidden md:block mt-10 text-right text-[#dddddd] md:fixed md:bottom-8 md:right-9 2xl:right-[60px] md:mt-0 md:text-[24px] z-50">
           <ul>
