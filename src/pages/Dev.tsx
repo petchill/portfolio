@@ -6,11 +6,13 @@ import ProjectSection from '../components/dev/ProjectSection';
 import BlogSection from '../components/dev/BlogSection';
 import FooterSection from '../components/dev/FooterSection';
 import NavMobile from '../components/dev/NavMobile';
+import SkillSection from '../components/dev/SkillSection';
 
 const links = [
   { label: 'About Me', href: '#about' },
   { label: 'Education', href: '#education' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Project', href: '#project' },
   { label: 'Blog', href: '#blog' },
   { label: 'Contact', href: '#contact' },
@@ -69,6 +71,9 @@ const Dev = () => {
         </section>
         <section id="experience">
           <ExperienceSection />
+        </section>
+        <section id="skills">
+          <SkillSection />
         </section>
         <section id="project">
           <ProjectSection />
