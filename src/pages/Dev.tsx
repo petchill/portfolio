@@ -2,12 +2,14 @@ import EducationSection from '../components/dev/EducationSection';
 import HeroSection from '../components/dev/HeroSection';
 import ExperienceSection from '../components/dev/ExperienceSection';
 import ProjectSection from '../components/dev/ProjectSection';
+import BlogSection from '../components/dev/BlogSection';
 
 const links = [
   { label: 'About Me', href: '#about', prefix: '— ' },
   { label: 'Education', href: '#education', prefix: '- ' },
-  { label: 'Contact', href: '#contact', prefix: '- ' },
-  { label: 'Blog ↗', href: 'https://example.com', prefix: '' },
+  { label: 'Experience', href: '#experience', prefix: '- ' },
+  { label: 'Project', href: '#project', prefix: '- ' },
+  { label: 'Blog', href: '#blog', prefix: '- ' },
 ];
 
 const Dev = () => {
@@ -21,7 +23,7 @@ const Dev = () => {
   return (
     <div className="min-h-screen w-screen font-inter bg-[#1f2024] text-white">
       <main className="relative w-full max-w-[2048px] m-auto">
-        <section className="h-screen">
+        <section id="about" className="h-screen">
           <HeroSection />
         </section>
         <section id="education" className="h-screen">
@@ -32,6 +34,9 @@ const Dev = () => {
         </section>
         <section id="project">
           <ProjectSection />
+        </section>
+        <section id="blog">
+          <BlogSection />
         </section>
         <nav className="hidden md:block mt-10 text-right text-[#dddddd] md:fixed md:bottom-8 md:right-9 2xl:right-[60px] md:mt-0 md:text-[24px] z-50">
           <ul>

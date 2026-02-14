@@ -87,9 +87,10 @@ export default function ProjectSection() {
           'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/portfolio/dev/Vinyl-background.png)',
       }}
     >
-      <h1 className="text-5xl md:text-6xl 2xl:text-8xl leading-[0.9] tracking-tight font-libreCas px-[16px] pt-[40px] md:p-[40px] 2xl:pt-[60px] 2xl:px-[60px] text-center md:text-left">
-        PROJECT
-      </h1>
+      <div className="px-[16px] pt-[40px] md:p-[40px] 2xl:pt-[60px] 2xl:px-[60px] text-center md:text-left">
+        <h1 className="text-5xl md:text-6xl 2xl:text-8xl leading-[0.9] tracking-tight font-libreCas">PROJECT</h1>
+        <p className="mt-[16px] text-[#dbdbdb]">Select the disc to see the detail</p>
+      </div>
       <div className="relative max-h-screen h-full flex flex-col md:flex-row gap-10 md:gap-8 px-4 py-10 md:px-10 md:py-12 2xl:px-[60px] justify-between">
         <article className="h-auto md:w-[calc(100%-280px)] max-w-[1240px] order-2 overflow-scroll rounded-2xl border border-white/20 text-left md:order-1 bg-black/80">
           <div className="relative h-40 w-full md:h-56">
