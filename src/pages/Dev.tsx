@@ -5,6 +5,7 @@ import ExperienceSection from '../components/dev/ExperienceSection';
 import ProjectSection from '../components/dev/ProjectSection';
 import BlogSection from '../components/dev/BlogSection';
 import FooterSection from '../components/dev/FooterSection';
+import NavMobile from '../components/dev/NavMobile';
 
 const links = [
   { label: 'About Me', href: '#about' },
@@ -59,6 +60,7 @@ const Dev = () => {
   return (
     <div className="min-h-screen w-screen font-inter bg-[#1f2024] text-white">
       <main className="relative w-full max-w-[2048px] m-auto">
+        <NavMobile links={links} activeSection={activeSection} onNavigate={jumpToSection} />
         <section id="about" className="h-screen">
           <HeroSection />
         </section>
