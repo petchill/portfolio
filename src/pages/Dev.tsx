@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import EducationSection from '../components/dev/EducationSection';
 import HeroSection from '../components/dev/HeroSection';
 import ExperienceSection from '../components/dev/ExperienceSection';
@@ -6,18 +7,51 @@ import BlogSection from '../components/dev/BlogSection';
 import FooterSection from '../components/dev/FooterSection';
 
 const links = [
-  { label: 'About Me', href: '#about', prefix: '— ' },
-  { label: 'Education', href: '#education', prefix: '- ' },
-  { label: 'Experience', href: '#experience', prefix: '- ' },
-  { label: 'Project', href: '#project', prefix: '- ' },
-  { label: 'Blog', href: '#blog', prefix: '- ' },
-  { label: 'Contact', href: '#contact', prefix: '- ' },
+  { label: 'About Me', href: '#about' },
+  { label: 'Education', href: '#education' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Project', href: '#project' },
+  { label: 'Blog', href: '#blog' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 const Dev = () => {
+  const [activeSection, setActiveSection] = useState('about');
+
+  useEffect(() => {
+    const sectionIds = links.map((item) => item.href.replace('#', ''));
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter((section): section is HTMLElement => Boolean(section));
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleEntries = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (visibleEntries.length > 0) {
+          setActiveSection(visibleEntries[0].target.id);
+        }
+      },
+      {
+        root: null,
+        threshold: [0.1],
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   const jumpToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
+      setActiveSection(sectionId);
       section.scrollIntoView({ behavior: 'smooth' });
     }
   };
@@ -57,7 +91,7 @@ const Dev = () => {
                   }}
                   className="transition-opacity hover:opacity-80 text-white! font-normal!"
                 >
-                  {item.prefix}
+                  {activeSection === item.href.replace('#', '') ? '— ' : '- '}
                   {item.label}
                 </a>
               </li>
